@@ -1,0 +1,1549 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial";
+    box-sizing: border-box;
+}
+
+
+/* Netflix main */
+
+.netflix{
+    background-image: url(MaterialsRequired/bg-img.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+.blackShade{
+    width: 100%;
+    background-image: linear-gradient(7deg, rgba(0, 0, 0, 0.8500) 10.00%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.50%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39.00%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.7250) 53.50%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68.00%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.50%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6000) 97.00%);
+}
+
+
+
+
+
+/* Navbar */
+.Margin-for-nav{
+    height: 120px;
+    width: 84vw;
+}
+
+.Netflix-Logo svg {
+    width: 245px;
+    height: 150px;
+}
+
+nav {
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.8000) 0.000%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7000) 25.00%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4000) 50.00%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1000) 75.00%, rgba(0, 0, 0, 0.04444) 83.33%, rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0.000) 100.0%);
+    display: flex;
+    justify-content: center;
+}
+
+.MainNav {
+    /* margin-left: 150px; */
+    padding: 23px 0px 14px 0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Main-Nav-right {
+    display: flex;
+    margin-left: 10px;
+}
+
+#Main-Nav-Btn{
+    font-size: 14px;
+    margin-left: 20px;
+    padding:7.5px 14px 7.5px 14px ;
+}
+
+.Netflix-Logo {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+}
+
+/* .Svg-logo{
+    width: 148px;
+    height: 40px;
+} */
+
+.Size-logo {
+    width: 148px;
+    height: 40px;
+}
+
+.Svg-language {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    margin-right: -30px;
+    color: white;
+    z-index: 1;
+}
+
+.language-Select {
+    /* border: none;  */
+    font-size: 15.4px;
+    font-weight: 500;
+    padding: 8px 0px 6px 32px;
+    width: 7.5rem;
+}
+
+select{
+    font-size: 3px;
+    color: white;
+    border: 0.5px solid rgba(155, 153, 153, 0.587);
+    padding: 7px 32px 7px 17px;
+    border-radius: 4px;
+    background-color: rgba(16, 16, 16, 0.432);
+    appearance: none;
+}
+
+option{
+    color: black;
+    font-weight: 500;
+}
+
+.Main-Language-svg{
+    color: white;
+    margin-left: -29px;
+}
+
+.Main-language {
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+}
+
+button{
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    border-radius: 0.25rem;
+    border: none;
+    font-weight: 700;
+}
+
+.txt {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.txt h1{
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.txt div {
+    margin-top: 5px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.txt p {
+    /* font-size: 18px; */
+    margin: 26px 0px 16px 0px;
+}
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Section-Main-Content{
+    /* margin-top: 9rem; */
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    background: none;
+    border: 0.1px solid light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    width: 21.5rem;
+    padding: 21px 16px 20px 16px;
+    margin-right: 7px;
+    font-weight: bolder;
+    font-size: 17px;
+    border-radius: .25rem;
+    color: white;
+}
+::placeholder{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.email-button-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-button-flex button {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 25px 16px 25px;
+}
+
+.email-button-flex button svg {
+    margin-left: 8px;
+}
+
+
+
+.separatingLine{
+    /* margin-top: 10rem; */
+    width: 100%;
+    height: 3.7px;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+
+div h2{
+    color: white;
+    font-size: 23px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    /* background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black; */
+}
+
+.Main-content-Center{
+    width: 80vw;
+}
+.h21{
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+main{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+main div svg {
+    color: white;
+    margin-right: 30px;
+    padding-top: 5px;
+}
+
+main select {
+    padding: 10px 36px 11px 12px ;
+    font-size:18px;
+    font-weight: 400;
+    margin-right: -30px;
+}
+
+.trending-flex{
+    display: flex;
+    /* margin-bottom: 20px; */
+}
+
+.main-select {
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+
+
+
+/* Top TenTen */
+
+/* .main-span {
+    width: 100px;
+} */
+
+.span-div {
+    width: 100%;
+    height: 295px;
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+.span-div::-webkit-scrollbar {
+    display: none; /*Hides the scrollbar*/
+}
+
+
+.span-width{
+    height: 245px;
+    width: 174px;
+    /* background: #db0606; */
+    display: flex;
+    border-radius: 7px;
+    align-items: end;
+}
+.span-width p{
+    font-family: "Inter";
+    margin-left: -20px;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 2px rgb(235, 229, 229);
+    /* -webkit-text-stroke: 0; */
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: black; 
+    font-weight: 900;
+}
+
+#first:hover{
+    transform: scale(1.05,1.05);
+    border-radius: 10px;
+}
+#second:hover{
+    transform: scale(1.05,1.05);
+    border-radius: 10px;
+}
+#three:hover{
+    transform: scale(1.05,1.05);
+    border-radius: 10px;
+}
+#four:hover{
+    transform: scale(1.05,1.05);
+    border-radius: 10px;
+}
+#five:hover{
+    transform: scale(1.05,1.05);
+    border-radius: 10px;
+}
+#six:hover{
+    transform: scale(1.05,1.05);
+    border-radius: 10px;
+}
+#seven:hover{
+    transform: scale(1.05,1.05);
+    border-radius: 10px;
+}
+#eight:hover{
+    transform: scale(1.05,1.05);
+    border-radius: 10px;
+}
+#nine:hover{
+    transform: scale(1.05,1.05);
+    border-radius: 10px;
+}
+#ten:hover{
+    transform: scale(1.05,1.05);
+    border-radius: 10px;
+}
+
+
+#first,#second,#three,#four,#five,#six,#seven,#eight,#nine,#ten {
+    padding: 15px 20px 0px 31px;
+    transform: scale(1,1);
+    transition: transform .19s ease-in-out;
+}
+
+
+#first .span-width {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(MaterialsRequired/tt1.webp);
+}
+#second .span-width {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(MaterialsRequired/tt2.webp);
+}
+#three .span-width {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(MaterialsRequired/tt3.webp);
+}
+#four .span-width {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(MaterialsRequired/tt4.webp);
+}
+
+#four p {
+    margin-bottom: -20px;
+    font-family: "Poppins";
+    font-size: 105px;
+    font-weight: 700;
+}
+
+#five .span-width {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(MaterialsRequired/tt5.webp);
+}
+#six .span-width {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(MaterialsRequired/tt6.webp);
+}
+#seven .span-width {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(MaterialsRequired/tt7.webp);
+}
+#eight .span-width {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(MaterialsRequired/tt8.webp);
+}
+#nine .span-width {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(MaterialsRequired/tt9.webp);
+}
+#ten .span-width {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(MaterialsRequired/tt1010.webp);
+}
+
+
+/*four reasons why*/
+
+.FourReasonsWhy{
+    background-color: black;
+}
+
+.joinBoxs {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.joinBox {
+    width: 19rem;
+    /* height: 37vh; */
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 15px;
+}
+
+.joinBox div {
+    padding: 4px 0px 0px 10px;
+    height: 75%;
+}
+/* #divv{
+    display: flex;
+    flex-direction: column; 
+    gap: 45px;
+} */
+
+.txt-box p{
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+.txt-svg{
+    margin-left: 61.5%;
+}
+
+.txt2-svg{
+    margin-left: 61.5%;
+    
+}
+
+
+.txt4-svg{
+    margin-left: 61.5%;
+
+}
+
+.txt4-svg svg{
+    margin-left: 61.5%;
+}
+
+
+/*Ques*/
+
+.questions-begin{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-bottom: 4.5rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+input[type="checkbox"] {
+    width: .1px;
+    height: .1px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.q1 ,.q2 ,.q3 , .q4, .q5, .q6{
+    width: 100%;
+    margin-top: -10px;
+}
+
+label:hover{
+    background-color: rgba(99, 98, 98, 0.621);
+}
+
+label{
+    font-size: 23px;
+    padding: 1.5rem;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(45, 45, 45);
+    transition: all .1s ease-in-out;
+}
+
+.answer{
+    background-color: rgb(45, 45, 45);
+    font-size: 23px;
+    max-height: 0rem;
+    opacity: 1;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.4s cubic-bezier(0.32, 0.94, 0.6, 1);
+
+}
+
+.answer p{
+    margin: 1.5rem;
+}
+.ques-svg {
+    height: 36px;
+    width: 36px;
+    transform: rotate(0deg);
+}
+
+
+.checkbox:checked + label .ques-svg {
+    transform: rotate(45deg);
+    transition:transform 0.4s cubic-bezier(0.32, 0.94, 0.6, 1);
+}
+
+.checkbox:checked ~ .answer{
+    max-height: 500px;
+    transition: max-height 0.4s cubic-bezier(0.32, 0.94, 0.6, 1);
+}
+
+.Footer-Main-Content {
+    text-align: center;
+    margin-bottom: 4.5rem;
+}
+.Footer-Main-Content input::placeholder{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.Footer-Main-Content input{
+    /* width: 33rem; */
+    padding: 19px 14px 18px 14px;
+}
+
+
+.Footer-Main-Content button {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 23px 13px 23px;
+}
+
+.Footer-Main-Content .email-button-flex button svg {
+    /* margin-top: px; */
+    margin-left: 8px;
+}
+
+
+
+/*tHe_enD*/
+.tHe-enD{
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 4.5rem;
+}
+.tHe-enD p{
+    margin-bottom: 3rem;
+}
+a{
+    color: inherit;
+}
+
+.Grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    font-size: 14px;
+    margin-bottom: 3.5rem;
+}
+.footer-language-select{
+    margin-left: 9px;
+}
+
+.Finally{
+    font-size: 15px;
+    margin-left: -4px;
+    margin-top: 2.6rem;
+}
+
+html, body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden; 
+}
+
+
+@media (max-width: 599.98px){
+    .Margin-for-nav {
+        width: 92vw;
+    }
+
+    .Netflix-Logo svg {
+        width:185px;
+        height:80px;
+        margin-left: -25px;
+        margin-top: 10px;
+    }
+    .Main-content-Center{
+        width: 92vw;
+    }
+
+    .language-Select {
+        font-weight: 500;
+        width: 0.0625rem;
+        padding-right: 1.75rem;
+    }
+
+    
+    .br1{
+        display: none;
+    }
+
+    .br2 {
+        display: none;
+    }
+
+    .br3 {
+        display: none;
+    }
+    
+    #Main-Nav-Btn{
+        font-size: 15px;
+        margin-left: 19px;
+        padding: 0.25rem 0.7rem;
+        height: 2rem;
+    }
+
+    .txt h1{
+        font-size: 31px;
+        letter-spacing:-1.5px;
+        width: 90%;
+        margin-left: 5%;
+        font-weight: 800;
+    }
+    .txt div{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .txt p{
+        line-height: 20px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+
+    .answer {
+        font-size: 1.17rem;
+    }
+
+    .txt p br {
+        display: none;
+    }
+
+    div h2{
+        padding-top: 44px;
+        margin-bottom: 2px;
+        font-size: 1.125rem;
+    }
+
+    form input{
+        width: 89vw;
+        padding: 13px 19px 13px 19px;
+    }
+
+    .email-button-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .email-button-flex button {
+        font-size: 1.1rem;
+        height: 3rem;
+        padding: 0.5rem 1rem;
+    }
+
+    section {
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Section-Main-Content{
+        /* margin-top: 9rem; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .separatingLine {
+        margin-top: 8rem;
+    }
+    .span-div {
+        width: 100%;
+        height: 240px;
+        display: flex;
+        overflow: auto;
+        scroll-behavior: smooth;
+    }
+    .span-width{
+        height: 190px;
+        width: 119px;
+        /* background: #db0606; */
+        display: flex;
+        border-radius: 12px;
+        align-items: end;
+    }
+    .span-width p{
+        font-family: "Inter";
+        margin-left: -3px;
+        font-size: 70px;
+        color: rgb(0, 0, 0);
+        -webkit-text-stroke: .8px rgb(255, 255, 255);
+        /* -webkit-text-stroke: 0; */
+        background-clip: text; 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: black; 
+        font-weight: 900;
+        margin-bottom: 25px;
+    }
+    #four p {
+        margin-bottom: -20px;
+        font-family: "Poppins";
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 9px;
+    }
+    #first,#second,#three,#four,#five,#six,#seven,#eight,#nine,#ten {
+        padding: 12px 5px 0px 12px;
+        transform: scale(1,1);
+        transition: transform .1s ease-in-out;
+    }
+    #first:hover{
+    transform: scale(1.01,1.01);
+    border-radius: 10px;
+}
+    #second:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #three:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #four:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #five:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #six:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #seven:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #eight:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #nine:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #ten:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    
+    .txt-box h2 {
+        font-size: 1.25rem;
+        padding: 17px 0px 7px 0px;
+    }
+
+    .h23 {
+        padding: 0%;
+        margin-bottom: 10px;
+    }
+
+    .joinBoxs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .joinBox {
+        width: 100%;
+        padding-right: 40px;
+    }
+    .txt-svg{
+        margin-left: 90%;
+    }
+
+    .txt2-svg{
+        margin-left: 90%;
+        
+    }
+
+    .txt4-svg{
+        margin-left: 90%;
+    }
+
+    .txt4-svg svg{
+        margin: 10px;
+    }
+
+    
+    .multiple-questions label p {
+        font-size: 1.17rem;
+    }
+
+    .multiple-questions label {
+        padding: 1.5rem;
+    }
+
+    
+    .ques-svg {
+        height: 24px;
+        width: 24px;
+    }
+    
+    .Grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-language-select select{
+        width: auto;
+    }
+
+    .Footer-Main-Content .email-button-flex{
+        align-items: flex-start;
+    }
+}
+
+
+
+@media (min-width: 600px) and (max-width: 960px){
+    .Margin-for-nav {
+        width: 90vw;
+    }
+
+    
+    .Netflix-Logo svg {
+        width:185px;
+        height:80px;
+        margin-left: -25px;
+        margin-top: 10px;
+    }
+    .Main-content-Center{
+        width: 90vw;
+    }
+    
+    .blackShade {
+        height: 37rem;
+    }
+
+    
+    .language-Select {
+        font-weight: 500;
+        padding-right: 1.75rem;
+    }
+
+    #Main-Nav-Btn{
+        font-size: 0.875rem;
+        margin-left: 19px;
+        padding: 0.25rem 1rem;
+        height: 2rem;
+    }
+
+    .br1{
+        display: none;
+    }
+
+    .br3 {
+        display: none;
+    }
+
+    .separatingLine {
+        margin-top: 10.4rem;
+    }
+
+    .txt h1{
+        font-size: 30.5px;
+        letter-spacing:-1.5px;
+    }
+    .txt div{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .txt p{
+        margin-top: 10px;
+        line-height: 20px;
+        font-weight: 500;
+        margin-bottom: 19px;
+    }
+    div h2{
+        font-size: 23px;
+    }
+
+    form input{
+        height: 3.5rem;
+        width: 15rem;
+        padding: 16px 19px 15px 19px;
+    }
+    
+    .email-button-flex button {
+        font-size: 1.125rem;
+        min-height: 3.5rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    section {
+        margin-top: 3.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Section-Main-Content{
+        /* margin-top: 9rem; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .span-div {
+        width: 100%;
+        height: 240px;
+        display: flex;
+        overflow: auto;
+        scroll-behavior: smooth;
+    }
+    .span-width{
+        height: 190px;
+        width: 119px;
+        /* background: #db0606; */
+        display: flex;
+        border-radius: 12px;
+        align-items: end;
+    }
+    .span-width p{
+        font-family: "Inter";
+        margin-left: -3px;
+        font-size: 70px;
+        color: rgb(0, 0, 0);
+        -webkit-text-stroke: .8px rgb(255, 255, 255);
+        /* -webkit-text-stroke: 0; */
+        background-clip: text; 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: black; 
+        font-weight: 900;
+        margin-bottom: 25px;
+    }
+    #four p {
+        margin-bottom: -20px;
+        font-family: "Poppins";
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 9px;
+    }
+    #first,#second,#three,#four,#five,#six,#seven,#eight,#nine,#ten {
+        padding: 15px 5px 0px 15px;
+        transform: scale(1,1);
+        transition: transform .1s ease-in-out;
+    }
+    #first:hover{
+    transform: scale(1.01,1.01);
+    border-radius: 10px;
+    }
+    #second:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #three:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #four:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #five:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #six:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #seven:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #eight:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #nine:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+    #ten:hover{
+        transform: scale(1.01,1.01);
+        border-radius: 10px;
+    }
+
+
+    .joinBoxs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    
+    .answer {
+        font-size: 1.17rem;
+    }
+
+    .joinBox {
+        width: 100%;
+        padding-right: 40px;
+    }
+    .txt-svg{
+        margin-left: 93%;
+    }
+
+    .txt2-svg{
+        margin-left: 93%;
+        
+    }
+
+    .h23 {
+        padding: 0%;
+        font-size: 1.125rem;
+    }
+
+
+    .h21 {
+        padding-top: 49px;
+        font-size: 19px;
+        margin-bottom: -10px;
+    }   
+    div h2{
+        color: white;
+        font-size: 20px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .txt4-svg{
+        margin-left: 93%;
+    }
+
+    .txt4-svg svg{
+        margin: 10px;
+    }
+    .Footer-Main-Content input{
+        width: 60vw;
+        padding: 16px 14px 15px 14px;
+    }
+
+
+    .Footer-Main-Content button {
+        font-size: 1.125rem;
+        padding: 0.75rem 1.5rem;
+        margin-right: -5px;
+    }
+
+    .Grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .multiple-questions label p {
+        font-size: 1.17rem;
+    }
+
+    .multiple-questions label {
+        padding: 1.5rem;
+    }
+    .questions-begin h2 {
+        padding-top: 0;
+        margin-bottom: 7px;
+    }
+
+    .ques-svg {
+        height: 24px;
+        width: 24px;
+    }
+
+
+}
+
+
+@media (min-width: 960px) {
+    .Margin-for-nav{
+        width: 87vw;
+    }
+    .Main-content-Center{
+        width: 87vw;
+    }
+    .blackShade {
+        background-image: linear-gradient(12deg, rgba(0, 0, 0, 0.8500) 36.00%, rgba(0, 0, 0, 0.8465) 40.58%, rgba(0, 0, 0, 0.8361) 45.17%, rgba(0, 0, 0, 0.8187) 49.75%, rgba(0, 0, 0, 0.7944) 54.33%, rgba(0, 0, 0, 0.7632) 58.92%, rgba(0, 0, 0, 0.7250) 63.50%, rgba(0, 0, 0, 0.6868) 68.08%, rgba(0, 0, 0, 0.6556) 72.67%, rgba(0, 0, 0, 0.6313) 77.25%, rgba(0, 0, 0, 0.6139) 81.83%, rgba(0, 0, 0, 0.6035) 86.42%, rgba(0, 0, 0, 0.6000) 91.00%);
+    }
+    .txt h1{
+        font-size: 37px;
+    }
+
+    div h2{
+        font-size: 23px;
+    }
+
+    .br2 {
+        display: none;
+    }
+
+    .br3 {
+        display: none;
+    }
+
+    form input{
+        width: 19rem;
+        padding: 16px 19px 15px 19px;
+    }
+    
+    .email-button-flex button {
+        font-size: 1.1rem;
+        padding: 14px 22px 13px 22px;
+    }
+
+    section {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Section-Main-Content{
+        /* margin-top: 9rem; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    
+    .separatingLine {
+        margin-top: 15rem;
+    }
+
+    .txt div {
+        margin-top: 2px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .txt p{
+        margin-top: 13px;
+    }
+
+    #divv {
+        padding: 15px;
+    }
+
+    .txt-box h2 {
+        padding-top: 5px;
+        font-size: 1.2rem;
+    }
+
+    .span-div {
+        width: 100%;
+        height: 260px;
+        display: flex;
+        overflow: auto;
+        scroll-behavior: smooth;
+    }
+    .span-width{
+        height: 210px;
+        width: 139px;
+        /* background: #db0606; */
+        display: flex;
+        border-radius: 7px;
+        align-items: end;
+    }
+    .span-width p{
+        font-family: "Inter";
+        margin-left: -20px;
+        font-size: 80px;
+        color: rgb(0, 0, 0);
+        -webkit-text-stroke: 1.3px rgb(235, 229, 229);
+        /* -webkit-text-stroke: 0; */
+        background-clip: text; 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: black; 
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    #four p {
+        margin-bottom: -20px;
+        font-family: "Poppins";
+        font-size: 89px;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+    .joinBoxs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .joinBox {
+        width: 100%;
+    }
+    .txt-svg{
+        margin-left: 85%;
+    }
+    
+    .txt2-svg{
+        margin-left: 85%;
+        
+    }
+    
+    .h23 {
+        padding: 0%;
+    }
+    
+    .txt4-svg{
+        margin-left: 83%;
+    }
+    
+    .txt4-svg svg{
+        margin: 10px;
+    }
+    .Footer-Main-Content input{
+        width: 30rem;
+        padding: 16px 14px 15px 14px;
+    }
+    
+    /* .Footer-Main-Content button {
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 23px 13px 23px;
+    } */
+
+    .Grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+
+@media (min-width: 1280px) {
+    .Section-Main-Content{
+        text-align: center;
+    }
+    .Margin-for-nav{
+        width: 78vw;
+    }
+    .Main-content-Center{
+        width: 78vw;
+    }
+    .blackShade {
+        background-image: linear-gradient(7deg, rgba(0, 0, 0, 0.8500) 10.00%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.50%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39.00%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.7250) 53.50%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68.00%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.50%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6000) 97.00%);
+    }
+
+    section {
+        margin-top: 12%;
+    }
+    .separatingLine {
+        margin-top: 15rem;
+    }
+    .txt h1{
+        font-size: 55px;
+    }
+    .txt p br {
+        display: none;
+    }
+
+    .h21 {
+        padding-top: 50px;
+    }
+    
+    .span-div {
+        width: 100%;
+        height: 315px;
+        display: flex;
+        overflow: auto;
+        scroll-behavior: smooth;
+    }
+
+    .span-width{
+        height: 265px;
+        width: 175px;
+        /* background: #db0606; */
+        display: flex;
+        border-radius: 10px;
+        align-items: end;
+    }
+    .span-width p{
+        font-family: "Inter";
+        margin-left: -20px;
+        font-size: 120px;
+        color: rgb(0, 0, 0);
+        -webkit-text-stroke: 1.3px rgb(235, 229, 229);
+        /* -webkit-text-stroke: 0; */
+        background-clip: text; 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: black; 
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+    #four p {
+        margin-bottom: -20px;
+        font-family: "Poppins";
+        font-size: 118.5px;
+        font-weight: 700;
+        margin-bottom: 0.01px;
+    }
+
+    .h23 {
+        padding: 0%;
+    }
+
+    
+    form input{
+        width: 21.5rem;
+        padding: 21px 16px 20px 16px;
+    }
+    .email-button-flex button {
+        font-size: 1.6rem;
+        padding: 16px 25px 16px 25px;
+    }
+    
+    .joinBox {
+        width: 19vmax;
+    }
+    .joinBox div{
+        height: 78%;
+    }
+    .joinBoxs {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+   
+    .Grid-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .txt-svg{
+        margin-left: 62.5%;
+    }
+
+    .txt-svg svg{
+        margin: 10px;
+    }
+
+    .txt2-svg svg{
+        margin: 10px;
+    }
+
+    .txt2-svg{
+        margin-left: 62.5%;
+    }
+
+
+    .txt4-svg{
+        margin-left: 62.5%;
+
+    }
+
+    .txt4-svg svg{
+        margin-left: 62.5%;
+        margin: 10px;
+    }
+
+    div h2{
+        font-size: 23px;
+    }
+    
+}
+
+
+
+@media (min-width : 1920px) {
+
+    #body_all_mid{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+    .Margin-for-nav{
+        width: 75.8rem;
+    }
+    .blackShade{
+        height: 55.3rem;
+        background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8500) 8.000%, rgba(0, 0, 0, 0.8465) 15.67%, rgba(0, 0, 0, 0.8361) 23.33%, rgba(0, 0, 0, 0.8187) 31.00%, rgba(0, 0, 0, 0.7944) 38.67%, rgba(0, 0, 0, 0.7632) 46.33%, rgba(0, 0, 0, 0.7250) 54.00%, rgba(0, 0, 0, 0.6868) 61.67%, rgba(0, 0, 0, 0.6556) 69.33%, rgba(0, 0, 0, 0.6312) 77.00%, rgba(0, 0, 0, 0.6139) 84.67%, rgba(0, 0, 0, 0.6035) 92.33%, rgba(0, 0, 0, 0.6000) 100.0%);
+    }
+    
+    .Main-content-Center{
+        width: 75.8rem;
+    }
+    
+    .all{
+        width: 1920px;
+    }
+
+    form input{
+        width: 21.5rem;
+        padding: 21px 16px 20px 16px;
+    }
+    .email-button-flex button {
+        font-size: 1.6rem;
+        padding: 16px 25px 16px 25px;
+    }
+    
+    
+    .separatingLine {
+        margin-top: 11.5rem;
+    }
+
+    section {
+        margin-top: 15rem;
+    }
+    .txt h1{
+        font-size: 60px;
+    }
+    .txt p br {
+       display: none;
+    }
+    .txt div {
+        font-size: 1.25rem;
+        margin-bottom: 35px;
+    }
+    form input{
+        width: 26rem;
+    }
+    div h2{
+        font-size: 24px;
+    }
+    
+    .h21{
+        font-size: 2rem;
+    }
+    .span-div {
+        width: 100%;
+        height: 355px;
+        display: flex;
+        overflow: auto;
+        scroll-behavior: smooth;
+        margin-bottom: 30px;
+    }
+    .span-width{
+        height: 305px;
+        width: 215px;
+        /* background: #db0606; */
+        display: flex;
+        border-radius: 10px;
+        align-items: end;
+    }
+    .span-width p{
+        font-family: "Inter";
+        margin-left: -20px;
+        font-size: 120px;
+        color: rgb(0, 0, 0);
+        -webkit-text-stroke: 1.3px rgb(235, 229, 229);
+        /* -webkit-text-stroke: 0; */
+        background-clip: text; 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: black; 
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+    #four p {
+        margin-bottom: -20px;
+        font-family: "Poppins";
+        font-size: 118.5px;
+        font-weight: 700;
+        margin-bottom: 0.01px;
+    }
+
+    .h23 {
+        font-size: 2rem;
+    }
+
+    .joinBoxs {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .joinBox {
+        height: 20rem;    
+    }
+
+    #divv {
+        padding-right: 10px;
+    }
+
+    .txt-svg svg{
+        margin: 25px 15px 0 15px;
+    }
+
+    .txt2-svg svg{
+        margin: 25px 15px 0 15px;
+    }
+
+    .txt2-svg{
+        margin-left: 62.5%;
+    }
+
+
+    .txt4-svg{
+        margin-left: 62.5%;
+
+    }
+
+    .txt4-svg svg{
+        margin-left: 62.5%;
+        margin: 25px 15px 0 15px;
+    }
+
+    .questions-begin div h2 {
+        font-size: 2rem;
+    }
+}
